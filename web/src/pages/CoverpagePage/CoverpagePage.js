@@ -38,7 +38,7 @@ const CoverpagePage = () => {
           x={state.x}
           onChange={({ x }) => setState(state => ({ ...state, x }))}
         />
-      /</div>
+      </div>
 
       <div className="fixed inset-x-0 bottom-0">
         <div className="bg-indigo-600">
