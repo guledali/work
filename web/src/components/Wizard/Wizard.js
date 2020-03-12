@@ -2,7 +2,6 @@ import { Link } from '@redwoodjs/router'
 import PropTypes from 'prop-types';
 
 const Wizard = ({ route }) => {
-  console.log(route)
   return (
   <div className="fixed inset-x-0 bottom-0">
     <div className="bg-indigo-600">
