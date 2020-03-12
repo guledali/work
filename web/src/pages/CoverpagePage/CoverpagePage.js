@@ -1,11 +1,12 @@
 import React, {useState } from 'react';
 import Slider from 'react-input-slider';
+import BackgroundLayout from "src/layouts/BackgroundLayout"
 
 const CoverpagePage = () => {
   const [state, setState] = useState({ x: 10, y: 10 });
   return (
   // layout
-    <div className="mx-auto sm:px-6 lg:px-8 bg-indigo-600 h-screen">
+    <BackgroundLayout>
 
       <div className="flex flex-col justify-center items-center pt-8">
         <h3 className="text-lg leading-6 font-medium text-white">
@@ -61,7 +62,7 @@ const CoverpagePage = () => {
       </div>
 
 
-    </div>
+    </BackgroundLayout>
   )
 }
 
