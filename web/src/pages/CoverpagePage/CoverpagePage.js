@@ -2,6 +2,7 @@ import React, {useState } from 'react';
 import Slider from 'react-input-slider';
 import BackgroundLayout from "src/layouts/BackgroundLayout"
 import Text from "src/components/Text"
+import { Link, routes } from '@redwoodjs/router'
 
 const CoverpagePage = () => {
   const [state, setState] = useState({ x: 10, y: 10 });
@@ -46,9 +47,7 @@ const CoverpagePage = () => {
             <div className="flex items-center justify-between flex-wrap">
               <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0">
                 <div className="rounded-md shadow-sm pb-8">
-                  <a href="#" className="flex items-center justify-center px-4 py-4 border border-transparent text-sm leading-5 font-medium rounded-md bg-orange-300 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150 rounded-full text-white font-medium text-xl">
-                    Vidare
-                  </a>
+                  <Link to={routes.redness()} className="flex items-center justify-center px-4 py-4 border border-transparent text-sm leading-5 font-medium rounded-md bg-orange-300 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150 rounded-full text-white font-medium text-xl">Vidare</Link>
                 </div>
               </div>
             </div>
