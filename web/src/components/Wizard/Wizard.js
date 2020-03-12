@@ -1,4 +1,4 @@
-import { Link, routes } from '@redwoodjs/router'
+import { Link } from '@redwoodjs/router'
 import PropTypes from 'prop-types';
 
 const Wizard = ({ route }) => {
